@@ -12,20 +12,20 @@ el:
         state: Περιοχή
         zipcode: Ταχυδρομικός Κώδικας
       spree/country:
-        iso: 
-        iso3: 
-        iso_name: 
-        name: Ονομασία 
-        numcode: 
+        iso: ISO
+        iso3: ISO3
+        iso_name: Όνομα ISO
+        name: Όνομα 
+        numcode: Κωδικός ISO
       spree/credit_card:
-        base: 
+        base: Βάση
         cc_type: Τύπος
         month: Μήνας
         number: Αριθμός
-        verification_value: 
+        verification_value: Τιμή επαλήθευσης 
         year: Έτος
       spree/inventory_unit:
-        state: Κατάσταση
+        state: Περιοχή
       spree/line_item:
         price: Τιμή
         quantity: Ποσότητα
@@ -33,7 +33,7 @@ el:
         name: Όνομα
         presentation: Παρουσίαση
       spree/order:
-        checkout_complete: Ολοκληρώθηκε
+        checkout_complete: Ολοκλήρωση αγοράς
         completed_at: Ολοκληρώθηκε στις
         coupon_code: Κωδικός κουπονιού
         created_at: Ημερομηνία Παραγγελίας
@@ -43,11 +43,11 @@ el:
         number: Αριθμός
         payment_state: Κατάσταση πληρωμής
         shipment_state: Κατάσταση αποστολής
-        special_instructions: 
+        special_instructions: Ειδικές Οδηγίες 
         state: Κατάσταση
         total: Σύνολο 
       spree/order/bill_address:
-        address1: Διεύθυνση 1
+        address1: Διεύθυνση χρέωσης
         city: Πόλη
         firstname: Όνομα 
         lastname: Επίθετο
@@ -65,14 +65,14 @@ el:
       spree/payment:
         amount: Ποσό
       spree/payment_method:
-        name: Ονομασία
+        name: Όνομα
       spree/product:
         available_on: Διαθέσιμο την 
         cost_currency: Νόμισμα κόστους
         cost_price: Τιμή κόστους
         description: Περιγραφή
         master_price: τιμή master
-        name: Ονομασία
+        name: Όνομα
         on_hand: 
         shipping_category: Κατηγορία μεταφορικών
         tax_category: Φορολογική κατηγορία 
@@ -82,35 +82,35 @@ el:
         description: Περιγραφή
         event_name: 
         expires_at: Λήξη στις
-        name: Ονομασία
+        name: Όνομα
         path: διαδρομή
         starts_at: Έναρξη στις
         usage_limit: Όριο χρήσης
       spree/property:
-        name: Ονομασία
+        name: Όνομα
         presentation: Παρουσίαση
       spree/prototype:
-        name: Ονομασία
+        name: Όνομα
       spree/return_authorization:
         amount: Ποσό
       spree/role:
-        name: Ονομασία
+        name: Όνομα
       spree/state:
         abbr: 
-        name: Ονομασία
+        name: Όνομα
       spree/tax_category:
         description: Περιοχή
-        name: Ονομασία
+        name: Όνομα
       spree/tax_rate:
         amount: Ποσό
         included_in_price: Συμπεριλαμβάνεται στην τιμή 
         show_rate_in_label: Να εμφανίζεται το ποσοστό
       spree/taxon:
-        name: Ονομασία
+        name: Όνομα
         permalink: 
         position: Θέση
       spree/taxonomy:
-        name: Ονομασία
+        name: Όνομα
       spree/user:
         email: Email
         password: Κωδικός
@@ -126,7 +126,7 @@ el:
         width: Πλάτος
       spree/zone:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
     errors:
       models:
         spree/credit_card:
@@ -281,13 +281,13 @@ el:
         promotions: Προωθήσεις
         reports: Αναφορές
         users: Χρήστες
-    administration: 
-    agree_to_privacy_policy: 
-    agree_to_terms_of_service: 
+    administration: Διαχείριση
+    agree_to_privacy_policy: Συμφωνώ με Πολιτική Προστασίας Προσωπικών Δεδομένων
+    agree_to_terms_of_service: Συμφωνώ με τους Όρους Χρήσης της Υπηρεσίας
     all: Όλα
     all_adjustments_closed: 
     all_adjustments_opened: 
-    all_departments: 
+    all_departments: Όλα τα τμήματα
     allow_ssl_in_development_and_test: 
     allow_ssl_in_production: 
     allow_ssl_in_staging: 
@@ -361,9 +361,10 @@ el:
     category: Κατηγορία
     check_for_spree_alerts: 
     checkout: Ταμείο
-    choose_a_customer: 
+    choose_a_customer: Επιλέξτε πελάτη 
     choose_currency: Επιλογή νομίσματος
     choose_dashboard_locale: 
+    choose_location: Επιλογή τοποθεσίας
     city: Πόλη
     clone: Αντιγραφή
     close: Κλείσιμο
@@ -415,7 +416,7 @@ el:
     customer_details: Στοιχεία πελάτη 
     customer_details_updated: 
     customer_search: 
-    cut: 
+    cut: Αποκοπή 
     dash:
       jirafe:
         app_id: 
@@ -467,7 +468,7 @@ el:
     editing_user: 
     editing_zone: 
     email: Email
-    empty: 
+    empty: Άδειο
     empty_cart: 
     enable_mail_delivery: 
     end: 
@@ -502,6 +503,7 @@ el:
     fill_in_customer_info: 
     filter_results: Φιλτρο Αποτελεσματων 
     finalize: 
+    find_a_taxon: Αναζήτηση ταξινομικής κατηγορίας
     first_item: 
     first_name: Όνομα
     first_name_begins_with: Το Όνομα αρχίζει 
@@ -524,7 +526,7 @@ el:
     has_no_shipped_units: 
     height: 
     hide_cents: 
-    home: 
+    home: Αρχική
     i18n:
       available_locales: 
       fields: Πεδία
@@ -579,7 +581,7 @@ el:
     listing_reports: Λίστα αναφορών
     listing_tax_categories: Λίστα φορολογικών κατηγορίων
     listing_users: Λίστα χρηστών
-    loading: 
+    loading: Φόρτωση
     locale_changed: 
     location: 
     lock: 
@@ -610,7 +612,7 @@ el:
     move_stock_between_locations: 
     my_account: Ο λογαριασμός μου
     my_orders: Οι παραγγελίες μου
-    name: Ονομασία
+    name: Όνομα
     name_or_sku: 
     new: Νέο
     new_adjustment: 
@@ -671,7 +673,7 @@ el:
     open: 
     open_all_adjustments: 
     option_type: 
-    option_type_placeholder: 
+    option_type_placeholder: Διαλέξτε μία επιλογή
     option_types: 
     option_value: 
     option_values: 
@@ -711,12 +713,12 @@ el:
       awaiting_return: Εν αναμονή επιστροφής
       canceled: Ακυρώθηκε
       cart: Καλάθι
-      complete: Ολοκλ.
-      confirm: Επιβεβαίωση
-      delivery: Παράδοση
-      payment: Πληρωμή
-      resumed: 
-      returned: Επεστράφη
+      complete: ολοκλ.
+      confirm: επιβεβαίωση
+      delivery: παράδοση
+      payment: πληρωμή
+      resumed: συνεχίζεται
+      returned: επεστράφη
     order_summary: 
     order_sure_want_to: 
     order_total: Σύνολο παραγγελίας
@@ -732,7 +734,7 @@ el:
     password: Κωδικός
     paste: Επικόλληση
     path: Διαδρομή
-    pay: 
+    pay: Πληρωμή
     payment: Πληρωμή
     payment_information: Πληροφορίες πληρωμής 
     payment_method: Τρόπος πληρωμής
@@ -741,7 +743,7 @@ el:
     payment_processing_failed: 
     payment_processor_choose_banner_text: 
     payment_processor_chnumberoose_link: 
-    payment_state:
+    payment_state: Κατάσταση πληρωμής
     payment_states:
       balance_due: Οφειλή
       checkout: 
@@ -758,7 +760,7 @@ el:
     percent_per_item: Ποσοστό / στοιχείο 
     permalink: 
     phone: Τηλέφωνο
-    place_order: 
+    place_order: Κάντε παραγγελία
     please_define_payment_methods: 
     populate_get_error: 
     powered_by: 
@@ -776,24 +778,24 @@ el:
     product_rule:
       choose_products: 
       label: Ετικέτα
-      match_all: 
-      match_any: 
+      match_all: Ταιριάζει με όλα
+      match_any: Ταιριάζει με οποιοδήποτε
       product_source:
         group: Ομάδα
-        manual: 
+        manual: μη αυτόματα
     products: Προϊόντα
-    promotion: 
+    promotion: Προώθηση
     promotion_action: 
     promotion_action_types:
       create_adjustment:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       create_line_items:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       give_store_credit:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
     promotion_actions: 
     promotion_form:
       match_policies:
@@ -803,22 +805,22 @@ el:
     promotion_rule_types:
       first_order:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       item_total:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       landing_page:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       product:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       user:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
       user_logged_in:
         description: Περιγραφή
-        name: Ονομασία
+        name: Όνομα
     promotions: 
     properties: Ιδιότητες
     property: Ιδιότητα
@@ -831,7 +833,7 @@ el:
     quantity_returned: 
     quantity_shipped: 
     rate: 
-    reason: 
+    reason: Αιτία
     receive: 
     receive_stock: 
     received: 
@@ -854,7 +856,7 @@ el:
     return_authorizations: 
     return_quantity: 
     returned: 
-    review: 
+    review: Αξιολόγηση
     rma_credit: 
     rma_number: 
     rma_value: 
@@ -865,25 +867,25 @@ el:
     s3_headers: 
     s3_protocol: 
     s3_secret: 
-    sales_total: 
-    sales_total_description: 
-    sales_totals: 
-    save_and_continue: 
+    sales_total: Σύνολο Πωλήσεων
+    sales_total_description: Σύνολο Πωλήσεων για όλες τις παραγγελίες 
+    sales_totals: Σύνολα Πωλήσεων
+    save_and_continue: Αποθήκευση και Συνέχεια
     say_no: Όχι
     say_yes: Ναί
     scope: 
     search: Αναζήτηση
     search_results: Αποτελέσματα αναζήτησης
-    searching: 
+    searching: Αναζήτηση
     secure_connection_type: 
-    security_settings: 
+    security_settings: Ρυθμίσεις ασφαλείας
     select: Επιλογή
-    select_from_prototype: 
-    select_stock: 
-    send_copy_of_all_mails_to: 
-    send_mails_as: 
-    server: 
-    server_error: 
+    select_from_prototype: Επιλέξτε από Πρωτότυπο
+    select_stock: Επιλογή αποθέματος
+    send_copy_of_all_mails_to: Στείλε αντίγραφο όλων των emails σε 
+    send_mails_as: Αποστολή e-mail ως 
+    server: Διακομιστής
+    server_error: Σφάλμα διακομιστή
     settings: Ρυθμίσεις
     ship: Αποστολή
     ship_address: Διεύθυνση αποστολής
@@ -899,16 +901,16 @@ el:
         thanks: Ευχαριστούμε
         track_information: 
         track_link: 
-    shipment_state: 
+    shipment_state: Κατάσταση αποστολής
     shipment_states:
       backorder: 
-      partial: 
-      pending: Σε αναμονή
-      ready: Έτοιμο
+      partial: μερικό 
+      pending: σε αναμονή
+      ready: έτοιμο
       shipped: 
-    shipments: 
+    shipments: Αποστολές
     shipped: 
-    shipping: 
+    shipping: Αποστολή
     shipping_address: 
     shipping_categories: 
     shipping_category: 
@@ -961,7 +963,7 @@ el:
     stock_successfully_transferred: 
     stock_transfer: 
     stock_transfers: 
-    stop: λήξη
+    stop: έως
     store: Κατάστημα
     street_address: 
     street_address_2: 
@@ -980,7 +982,7 @@ el:
     tax_total: 
     taxon: 
     taxon_edit: 
-    taxon_placeholder: 
+    taxon_placeholder: Προσθέστε ταξινομική κατηγορία
     taxonomies: 
     taxonomy: 
     taxonomy_edit: 
@@ -1010,7 +1012,7 @@ el:
     transfer_to_location: 
     tree: 
     type: Τύπος
-    type_to_search: 
+    type_to_search: Πληκτρολογήστε για αναζήτηση
     unable_to_connect_to_gateway: 
     under_price: 
     unlock: 
@@ -1035,7 +1037,7 @@ el:
       must_be_non_negative: 
     value: Τιμή
     variant: Παραλλαγή
-    variant_placeholder: 
+    variant_placeholder: Επιλέξτε μια παραλλαγή
     variants: Παραλλαγές
     version: Έκδοση
     void: Κενό
